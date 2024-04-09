@@ -23,7 +23,7 @@ app.use('/uploads/images', express.static(path.join('uploads', 'images')));
 
 app.use(
   cors({
-    origin: 'http://localhost:5173', // Replace with your actual frontend domain
+    origin: 'https://dribblee-clone.netlify.app', // Replace with your actual frontend domain
     credentials: true,
   })
 );
@@ -31,7 +31,7 @@ app.use(
 app.use((req, res, next) => {
   res.setHeader(
     'Access-Control-Allow-Origin',
-    'http://localhost:5173'
+    'https://dribblee-clone.netlify.app'
   );
   res.setHeader(
     'Access-Control-Allow-Headers',
